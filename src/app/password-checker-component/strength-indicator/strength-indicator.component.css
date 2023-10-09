@@ -1,0 +1,5 @@
+.indicator {
+  height: 3px;
+  border-radius: 35px;
+  transition:all 1s ease;
+}

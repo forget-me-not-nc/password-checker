@@ -9,7 +9,7 @@ export class PasswordCheckerService {
     return password.length === 0;
   }
 
-  isValid(password:string, regExp: RegExp) {
+  matchesPattern(password:string, regExp: RegExp) {
     return regExp.test(password);
   }
 

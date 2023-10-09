@@ -51,7 +51,7 @@ export class PasswordCheckerComponent implements OnInit, OnChanges {
   }
 
   isPasswordValid(): boolean {
-    return this.passwordCheckerService.isValid(this.password, this.defaultInvalidRule);
+    return this.passwordCheckerService.matchesPattern(this.password, this.defaultInvalidRule);
   }
 
   getCurrentColor(): string {
